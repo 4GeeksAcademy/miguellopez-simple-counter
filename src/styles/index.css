@@ -10,3 +10,42 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body {
+    background-image: url("https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.bigCounter {
+    color: white
+}
+
+#animated-text {
+    opacity: 0; 
+    animation: fadeInOut 5s infinite; 
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; 
+    }
+    50% {
+        opacity: 1; 
+    }
+    100% {
+        opacity: 0; 
+    }
+}
+
+.calendar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .calendar div,
+  .calendar p {
+    margin-left: 5px;
+  }
